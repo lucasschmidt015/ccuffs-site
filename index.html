@@ -46,6 +46,28 @@
     a{
         color: red;
     }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+    }
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
 </style>
 </head>
 <body>
@@ -57,8 +79,9 @@
     <img src="https://cdn.myanimelist.net/images/characters/9/310307.jpg">
     <img src="http://1.bp.blogspot.com/-59dNTqfn19c/Tyx_mjZYnsI/AAAAAAAAArs/DqSUHus9JPk/s1600/naruto-shippuden-ultimate-ninja-impact-playstation-portable-psp-1308303191-069.jpg">
     <p class="two">Este é o meu primeiro site!!!</p>
-    <h2>Meus links</h2>
-    <p class="tree"><a href="https://github.com/lucasschmidt015">Github</a></p>
-    <p class="four"><a href="https://www.instagram.com/__schmidtlucas/">Instagram</a></p>   
+    <ul>
+        <li><a class="active" href="#Github">Links</a></li>
+        <li><a href="https://www.instagram.com/__schmidtlucas/">Instagran</a></li> 
+        <li><a href="https://github.com/lucasschmidt015">Github</a></li> 
 </body>
 </html>
